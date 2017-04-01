@@ -1,0 +1,245 @@
+@import 'normalize.css';
+@import 'layout';
+$text-color: #191b29;
+.ba-container {
+	width: 1200px;
+}
+@mixin btn-effect {
+	:hover {
+		cursor: pointer;
+	}
+}
+.ba-home {
+	font-family: 'Roboto', 'Roboto Slab', sans-serif;
+	font-size: 15px;
+	color: #FFF;
+}
+.ba-left {
+	float: left;
+}
+.ba-right {
+	float: right;
+}
+// header part
+.ba-header {
+	background-color: #edeff1;
+}
+.ba-logo {
+	margin-top: 60px;
+	margin-left: 10px;
+}
+.ba-navigation {
+	font-size: 18px;
+	&__list {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		margin-top: 50px;
+		margin-bottom: 65px;
+		margin-right: 10px;
+	}
+	&__item	{
+		float: left;
+	}
+	&__link {
+		display: block;
+		text-decoration: none;
+		color: $text-color;
+		font-size: 18px;
+		padding: 15px 25px;
+		&:hover,
+		&:active,
+		&:focus {
+			border-radius: 25px;
+			background-color: #dd4b2b;
+			color: #fff;
+		}
+	}
+}
+.ba-btn {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.6;
+	color: #612316;
+	text-decoration: none;
+	border-radius: 25px;
+	background-color: #fff;
+	padding: 16px 65px;
+}
+// main part
+.ba-main-title {
+	color: #FFF;
+	font-size: 72px;
+	text-align: center;
+	margin: 20px;
+	font-weight: 400;
+	margin: 0;
+}
+.ba-main-description {
+	color: #FFF;
+	font-size: 30px;
+	line-height: 1.6;
+	margin: 0;
+	margin-bottom: 115px;
+}
+.ba-main {
+	margin-top: -20px;
+	text-align: center;
+}
+.ba-main-section {
+	background: url('../images/main_bg.jpg')center no-repeat;
+	background-size: cover;
+	padding-top: 470px;
+	padding-bottom: 120px;
+	&__image {
+		border-radius: 50%;
+	}
+	&__title {
+		font-size: 30px;
+		color: #FFF;
+		line-height: 0.8;
+		font-weight: 700;
+		margin: 0;
+		margin-top: 30px;
+		padding-top: 30px;
+	}
+	&__subtitle {
+		padding: 10px 15px 15px 0;
+		line-height: 2;
+		font-weight: 300;
+		margin-bottom: 60px;
+	}
+}
+// news part
+.ba-news {
+	background-color: #edeff1;
+	padding-bottom: 130px;
+	&__title {
+		font-size: 30px;
+		line-height: 0.8;
+		font-weight: 700;
+		color: $text-color;
+		padding: 40px;
+		padding-top: 50px;
+	}
+	&__subtitle {
+		font-size: 24px;
+		font-weight: 400;
+		color: $text-color;
+		margin-top: 30px;
+		margin-bottom: 5px;
+	}
+	&__description {
+		color: $text-color;
+		line-height: 2;
+		margin: 0;
+		padding: 0 30px 40px;
+	}
+	.ba-btn {
+		color: $text-color;
+		font-size: 15px;
+		font-weight: 300;
+		padding: 15px 50px;
+	}
+}
+// newsletter part
+.ba-newsletter {
+	background: url('../images/newsletter_bg1.jpg') center no-repeat;
+	background-size: cover;
+	padding-bottom: 105px;
+	&__title {
+		font-size: 30px;
+		line-height: 0.8;
+		font-weight: 700;
+		margin: 0;
+		padding-top: 90px;
+	}
+	&__description {
+		margin-top: 25px;
+		padding-right: 300px;
+		padding-left: 300px;
+	}
+}
+.ba-form {
+	width: 510px;
+	height: 55px;
+	margin: 0 auto;
+	position: relative;
+	margin-top: 50px;
+	&__input {
+		width: 510px;
+		padding: 15px 40px;
+		border: 1px solid rgba(255,255,255, 0.6);
+		border-radius: 25px;
+		background-color: rgba(255,255,255, 0.4);
+	}
+	&__submit	{
+		position: absolute;
+		top: 0;
+		right: 0;
+		border: none;
+		font-size: 18px;
+		line-height: 1.6;
+		color: #612316;
+		text-decoration: none;
+		border-radius: 25px;
+		background-color: #fff;
+		padding: 10px 75px;
+		cursor: pointer;
+	}
+	&__submit:hover {
+		transform: scale(1.1);
+	}
+
+}
+// details part
+.ba-details {
+	padding-top: 30px;
+	padding-bottom: 140px;
+	color: $text-color;
+	text-align: left;
+	&__title {
+		font-size: 30px;
+		line-height: 0.8;
+		font-weight: 700;
+		padding-left: 15px;
+		padding-top: 50px;
+	}
+	&__imgbox {
+		width: 570px;
+		height: 404px;
+		border: 1px solid #dbdbdb;
+	}
+	&__content {
+	padding-bottom: 45px;
+	padding-left: 20px;
+	line-height: 1.2;
+	}
+	.ba-btn {
+		color: #fff;
+		margin-left: 15px;
+		&--red {
+			background-color: #dd4b2b;
+			padding: 16px 75px;
+		}
+		&--blue {
+			background-color: #4b4e73;
+			padding: 16px 75px;
+			margin-left: -15px;
+		}
+	}
+}
+// footer part
+.ba-footer {
+	background-color: #d75d0e;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 2;
+	.ba-footer-list {
+		list-style-type: none;
+		margin-top: 85px;
+		margin-bottom: 105px;
+		padding-right: 20px;
+	}
+}
